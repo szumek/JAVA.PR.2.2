@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args){
         System.out.println("Hello world!");
@@ -14,6 +16,21 @@ public class Main {
 
         Animal animalWithMaxWeight = animal1.weight > animal2.weight ? animal1 : animal2;
 
-        System.out.println("The heaviest animal is " + animalWithMaxWeight.name + ". Its weight is: " + animalWithMaxWeight.weight + " kg.");
+        System.out.println("The heaviest animal is " + animalWithMaxWeight.name + ". Its weight is: " + animalWithMaxWeight.weight + "kg.");
+
+        StringBuilder animaldesc = new StringBuilder("The heaviest animal is ").
+                append(animalWithMaxWeight.name).
+                append(". Its weight is: ").
+                append(animalWithMaxWeight.weight).
+                append("kg.");
+        System.out.println(animaldesc);
+
+        ArrayList<Human> humanslist = new ArrayList<>();
+        humanslist.add(human1);
+        humanslist.add(human2);
+
+        for (Human human : humanslist){
+            System.out.println(human.firstName);
+        }
     }
 }
