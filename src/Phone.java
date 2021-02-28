@@ -1,9 +1,11 @@
 public class Phone {
+    private String producer;
     private String model;
-    private String company;
+    private double size;
 
-    public Phone(String model, String company) {
+    public Phone(String producer, String model, double size) {
+        this.producer = producer;
         this.model = model;
-        this.company = company;
+        this.size = size;
     }
 }
