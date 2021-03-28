@@ -1,3 +1,7 @@
+package pl.gda.wsb;
+
+import pl.gda.wsb.devices.Car;
+
 import java.util.Objects;
 
 public class Human {
@@ -32,7 +36,7 @@ public class Human {
 
     @Override
     public String toString() {
-        return "Human{" +
+        return "pl.gda.wsb.Human{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", position='" + position + '\'' +

@@ -1,3 +1,7 @@
+package pl.gda.wsb.devices;
+
+import pl.gda.wsb.Producer;
+
 public class Car {
     public int year;
     public double engineCapacity;
@@ -13,7 +17,7 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
+        return "pl.gda.wsb.devices.Car{" +
                 "year=" + year +
                 ", engineCapacity=" + engineCapacity +
                 ", model='" + model + '\'' +

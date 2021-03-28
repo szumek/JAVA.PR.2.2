@@ -1,3 +1,5 @@
+package pl.gda.wsb.devices;
+
 public class Phone {
     private String producer;
     private String model;
@@ -11,7 +13,7 @@ public class Phone {
 
     @Override
     public String toString() {
-        return "Phone{" +
+        return "pl.gda.wsb.devices.Phone{" +
                 "producer='" + producer + '\'' +
                 ", model='" + model + '\'' +
                 ", size=" + size +

@@ -1,4 +1,8 @@
-import javax.sound.midi.SysexMessage;
+package pl.gda.wsb;
+
+import pl.gda.wsb.devices.Car;
+import pl.gda.wsb.devices.Phone;
+
 import java.util.ArrayList;
 
 public class Main {

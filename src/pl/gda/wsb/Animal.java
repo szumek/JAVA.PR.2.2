@@ -1,3 +1,5 @@
+package pl.gda.wsb;
+
 public class Animal{
     public String name;
     public final String species;
@@ -52,7 +54,7 @@ public class Animal{
 
     @Override
     public String toString() {
-        return "Animal{" +
+        return "pl.gda.wsb.Animal{" +
                 "name='" + name + '\'' +
                 ", species='" + species + '\'' +
                 ", age=" + age +
