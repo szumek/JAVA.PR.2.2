@@ -46,5 +46,7 @@ public class Main {
         animal2.feed();
         animal2.feed();
 
+        Car car1 = new Car(1997, 2.0, "A5", "Audi");
+        human1.car = car1;
     }
 }
