@@ -10,7 +10,7 @@ public class Human {
     public String position;
     private double salary;
     public Animal pet;
-    public Car car;
+    private Car car;
 
     public Human(String firstName, String lastName, String position, double salary, Animal pet, Car car) {
         this.firstName = firstName;
@@ -34,6 +34,23 @@ public class Human {
             System.out.println("ZUS i US wiedzą już o zmianie wypłaty i nie ma sensu ukrywać dochodu.");
             this.salary = salary;
         }
+    }
+
+    public Car getCar() {
+        return car;
+    }
+
+    public void setCar(Car car) {
+        if(salary > car.value){
+            System.out.println("Udało się zakupić samochód za gotówkę!");
+            this.car = car;
+        } else if (car.value * 1/12 < salary){
+            System.out.println("Udało się kupić samochód na kredyt!");
+            this.car = car;
+        } else {
+            System.out.println("Zapisz się na studia i znajdź nową robotę albo idź po podwyżkę!");
+        }
+
     }
 
     @Override

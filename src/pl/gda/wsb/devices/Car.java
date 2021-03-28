@@ -7,12 +7,14 @@ public class Car {
     public double engineCapacity;
     public final String model;
     public final Producer producer;
+    public double value;
 
-    public Car(int year, double engineCapacity, String model, Producer producer) {
+    public Car(int year, double engineCapacity, String model, Producer producer, double value) {
         this.year = year;
         this.engineCapacity = engineCapacity;
         this.model = model;
         this.producer = producer;
+        this.value = value;
     }
 
     @Override
@@ -22,6 +24,7 @@ public class Car {
                 ", engineCapacity=" + engineCapacity +
                 ", model='" + model + '\'' +
                 ", producer=" + producer +
+                ", value=" + value +
                 '}';
     }
 }

@@ -12,7 +12,7 @@ public class Main {
         Animal animal1 = new Animal("Zefir", "Parrot", 5, 0.6);
         Animal animal2 = new Animal("Zeus", "Dog", 3, 26);
 
-        Car car1 = new Car(1997, 2.0, "A5", Producer.KIA);
+        Car car1 = new Car(1997, 2.0, "A5", Producer.KIA, 18000);
 
         Human human1 = new Human("Janusz", "Kowalski", "Tester", 12000, animal1, car1);
         Human human2 = new Human("Andrzej", "Kowalczyk", "Team Manager", 18000, animal2, car1);
@@ -65,5 +65,7 @@ public class Main {
         human1.setSalary(14700.0);
         human1.setSalary(-14700.0);
         System.out.println("Salary: " + human1.getSalary());
+
+        human1.setCar(car1);
     }
 }
