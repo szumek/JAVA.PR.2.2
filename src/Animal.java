@@ -49,4 +49,17 @@ public class Animal{
         }
 
     }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", species='" + species + '\'' +
+                ", age=" + age +
+                ", weight=" + weight +
+                ", DEFAULT_WEIGHT_PARROT=" + DEFAULT_WEIGHT_PARROT +
+                ", DEFAULT_WEIGHT_DOG=" + DEFAULT_WEIGHT_DOG +
+                ", DEFAULT_WEIGHT=" + DEFAULT_WEIGHT +
+                '}';
+    }
 }

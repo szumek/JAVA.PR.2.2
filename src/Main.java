@@ -1,18 +1,22 @@
+import javax.sound.midi.SysexMessage;
 import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args){
         System.out.println("Hello world!");
 
-        Human human1 = new Human("Janusz", "Kowalski", "Tester", 12000);
-        Human human2 = new Human("Andrzej", "Kowalczyk", "Team Manager", 18000);
+        Animal animal1 = new Animal("Zefir", "Parrot", 5, 0.6);
+        Animal animal2 = new Animal("Zeus", "Dog", 3, 26);
+
+        Car car1 = new Car(1997, 2.0, "A5", Producer.KIA);
+
+        Human human1 = new Human("Janusz", "Kowalski", "Tester", 12000, animal1, car1);
+        Human human2 = new Human("Andrzej", "Kowalczyk", "Team Manager", 18000, animal2, car1);
+        Human human3 = new Human("Andrzej", "Kowalczyk", "Team Manager", 18000, animal2, car1);
 
 
         Phone phone1 = new Phone("Samsung", "Galaxy S III", 6.9);
         Phone phone2 = new Phone("Iphone", "12 pro", 7.5);
-
-        Animal animal1 = new Animal("Zefir", "Parrot", 5, 0.6);
-        Animal animal2 = new Animal("Zeus", "Dog", 3, 26);
 
         Animal animalWithMaxWeight = animal1.getWeight() > animal2.getWeight() ? animal1 : animal2;
 
@@ -46,7 +50,12 @@ public class Main {
         animal2.feed();
         animal2.feed();
 
-        Car car1 = new Car(1997, 2.0, "A5", "Audi");
-        human1.car = car1;
+        if(human2.equals(human3)) System.out.println("Wynik porównania: TRUE");
+        else System.out.println("Wynik porównania: FALSE");
+
+        System.out.println(human1.toString());
+        System.out.println(phone1.toString());
+        System.out.println(car1.toString());
+        System.out.println(animal1.toString());
     }
 }

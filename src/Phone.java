@@ -8,4 +8,14 @@ public class Phone {
         this.model = model;
         this.size = size;
     }
+
+    @Override
+    public String toString() {
+        return "Phone{" +
+                "producer='" + producer + '\'' +
+                ", model='" + model + '\'' +
+                ", size=" + size +
+                '}';
+    }
 }
+
