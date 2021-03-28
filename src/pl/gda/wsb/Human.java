@@ -1,14 +1,14 @@
 package pl.gda.wsb;
 
 import pl.gda.wsb.devices.Car;
-
+import java.util.Date;
 import java.util.Objects;
 
 public class Human {
     public String firstName;
     public String lastName;
     public String position;
-    public double salary;
+    private double salary;
     public Animal pet;
     public Car car;
 
@@ -19,6 +19,21 @@ public class Human {
         this.salary = salary;
         this.pet = pet;
         this.car = car;
+    }
+
+    public double getSalary() {
+        System.out.println(new Date() + ": Pobrano informacje o wysokości zarobków - " + this);
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        if (salary < 0) System.out.println("Nikt nie będize dokładał do pracy!");
+        else {
+            System.out.println("Nowe dane zostały wysłane do systemu księgowego.");
+            System.out.println("Nowy aneks do umowy jest do odebrania u Pani Hani z działu kadr.");
+            System.out.println("ZUS i US wiedzą już o zmianie wypłaty i nie ma sensu ukrywać dochodu.");
+            this.salary = salary;
+        }
     }
 
     @Override
