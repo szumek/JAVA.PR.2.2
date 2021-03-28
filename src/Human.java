@@ -3,6 +3,7 @@ public class Human {
     public String lastName;
     public String position;
     public double salary;
+    public Animal pet;
 
     public Human(String firstName, String lastName, String position, double salary) {
         this.firstName = firstName;
